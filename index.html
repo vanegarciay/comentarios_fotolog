@@ -5,75 +5,82 @@
 	<title>FOTOLOG - ..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 logo">
-					<img src="img/fotolog-logo.png" alt="">
+	<div class="container bg">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 logo col-xs-12">
+						<img src="img/fotolog-logo.png" alt="">
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<section id="bannerflog">
-		<div class="container">
-			<div class="col-md-12 text-center">
-				<h1>..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</h1>
-			</div>
-		</div>
-	</section>
-	<section id="contenido">
-		<div class="container">
-			<div class="col-md-2 recientes">
-				<a href="" class="fotos">Fotos Recientes</a>
-				<img src="img/jarcor.jpg">
-				<img src="img/foto_0920140822124434.jpg" alt="">
-				<img src="img/i-62869.jpeg" alt="">
-				<img src="img/p3.jpg" alt="">
-			</div>
-			<div class="col-md-8">
-				<img src="img/m1_768_11MS.jpg" alt="">
-				<p>AqUi EStAáá Mi AmIgA ArEnItAáÁÁ</p>
-			</div>
-			<div class="col-md-2 recientes">
-				<a href="" class="fotos">Fotos Recientes</a>
-				<img src="img/jarcor.jpg">
-				<img src="img/foto_0920140822124434.jpg" alt="">
-				<img src="img/i-62869.jpeg" alt="">
-				<img src="img/p3.jpg" alt="">
-			</div>
-		</div>
-	</section>
-	<section class="formulario">
-		<div class="container" id="caja">
-			<div class="row">
-				<div class="col-md-offset-3 col-md-6">
-					<form Name="formulario">
-						<h3>Nombre</h3>
-						<input type="text" id="clave">
-						<h3>Comentario</h3>
-						<textarea id="valor"></textarea>
-					</form>
+		</header>
+		<section id="bannerflog">
+			<div class="container">
+				<div class="col-md-12 col-xs-12 text-center">
+					<h1>..::ÁrÉnItÁ .´´´ ÁmíGáS x CrÉw::..</h1>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="container">
-		<div class="row">
-			<div class="col-md-offset-3 col-md-6">
-				<div id="ale"></div>
+		</section>
+		<section id="contenido">
+			<div class="container">
+				<div class="col-md-2 col-xs-12 recientes">
+					<a href="" class="fotos">Fotos Recientes</a>
+					<img src="img/jarcor.jpg">
+					<img src="img/foto_0920140822124434.jpg" alt="">
+					<img src="img/i-62869.jpeg" alt="">
+					<img src="img/p3.jpg" alt="">
+				</div>
+				<div class="col-md-8 col-xs-12">
+					<img src="img/m1_768_11MS.jpg" alt="">
+					<p>AqUi EStAáá Mi AmIgA ArEnItAáÁÁ</p>
+				</div>
+				<div class="col-md-2 col-xs-12 recientes">
+					<a href="" class="fotos">Fotos Recientes</a>
+					<img src="img/jarcor.jpg">
+					<img src="img/foto_0920140822124434.jpg" alt="">
+					<img src="img/i-62869.jpeg" alt="">
+					<img src="img/p3.jpg" alt="">
+				</div>
 			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="row">
-			<div class="col-md-12">
-				<p class="text-center">Laboratoria 2017</p>
+		</section>
+		<section class="formulario">
+			<div class="container" id="caja">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6 col-xs-12">
+						<form Name="formulario">
+							<h3 class="pangolin">Nombre:</h3>
+							<input type="text" id="nombre">
+							<h3 class="pangolin">Comentario:</h3>
+							<textarea id="comentario" placeholder="Deja un comentario..."></textarea>
+							<button type="button" class="btn btn-default btnpublicar" onclick="validateData()" value="Guardar datos"><i class="fa fa-floppy-o" aria-hidden="true"></i> Publicar</button>
+							<button type="button" class="btn btn-default" onclick="cleanData()" value="Recuperar datos"><i class="fa fa-trash-o" aria-hidden="true"></i> Limpiar datos</button>
+						</form>
+					</div>
+				</div>
 			</div>
-		</div>
-	</footer>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 col-xs-12">
+					<div id="data">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<p class="text-center">Laboratoria 2017</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>

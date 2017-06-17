@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #FFC0CB;
   color:black;
 }
 
@@ -30,34 +30,43 @@ h1{
 
 textarea, input{
   width: 100%;
-  border-radius: 0px;
-  border: 1px solid DeepPink;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 20, 147, 0.5);
   margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.posteo {
-  color: DeepPink;
-}
-.posteo strong{
-  display: block;
-}
-.posteo hr {
-  border: 1px solid DeepPink;
-}
-/* PARA CORAZON */
-.corazon {
-  font-size: 40px;
-  color: gray;
-  text-align: center;
-}
-.rojo {
-  color: red;
-}
 footer{
   padding: 10px;
 }
 
+.bg {
+  background: #FFE4E1;
+}
 
+.btnpublicar {
+  background: rgba(255, 20, 147, 0.5);
+  font-weight: bold;
+  margin-right: 320px;
+  color: white;
+}
 
-/* Estilos comentarios */
+.caja-comentario {
+  border: 1px solid rgba(255, 20, 147, 0.5);
+  padding: 20px;
+  margin: 30px;
+  border-radius: 5px;
+}
+.caja-comentario p {
+  font-family: 'Roboto', cursive;
+}
+
+.caja-comentario strong {
+  font-family: 'Pangolin', cursive;
+
+}
+
+.pangolin {
+   font-family: 'Pangolin', cursive;
+}
 
